@@ -25,7 +25,7 @@
                     <div class="flex items-baseline gap-2">
                         {#if 'icon' in page}
                             {@const Icon = page.icon}
-                            <Icon size={16} />
+                            <Icon size={16} class="transform translate-y-1" />
                         {/if}
                         {page.name}
                     </div>
