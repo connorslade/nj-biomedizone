@@ -17,9 +17,9 @@
     ];
 </script>
 
-<nav class="flex justify-between items-center p-4 shadow-md">
-    <a class="text-lg" href="/">NJ BioMedizone</a>
-	<div class="flex space-x-6">
+<nav class="flex flex-wrap justify-center sm:justify-between items-center p-4 shadow-md">
+    <a class="text-lg mr-4" href="/">NJ BioMedizone</a>
+	<div class="flex flex-wrap space-x-2 sm:space-x-4 justify-center">
 	   <NavDropdown name="Home" href="/" links={[
 			{ name: 'About Us', href: '/#about-us' },
 			{ name: 'Meet the Team', href: '/#meet-the-team' },
@@ -39,11 +39,11 @@
 
 <Title title={page.data.title} />
 
-<div class="max-w-3xl mx-auto mb-4">
+<div class="max-w-3xl mx-auto mb-4 pl-4 pr-4">
     {@render children()}
 </div>
 
-<footer class="p-4 text-center border-t border-gray-200">
+<footer class="p-4 mb-4 text-center border-t border-gray-200">
     <p>©2025 NJ BioMedizone</p>
     <p>Website by <Link href="https://connorcode.com">Connor Slade</Link></p>
 </footer>

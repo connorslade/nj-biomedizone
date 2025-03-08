@@ -5,7 +5,7 @@
 
 <Subtitle title="Meet the Team" />
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     {#each officers as officer}
         <div
             class="bg-white shadow-md rounded-lg overflow-hidden flex items-center p-4"

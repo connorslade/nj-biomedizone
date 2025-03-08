@@ -11,13 +11,13 @@
 </div>
 
 <style>
-.inner {
-    transform: translateY(-2.5px);
+    .inner {
+        transform: translateY(-2.5px);
     transition: transform 0.5s ease-out;
 }
 
 .outer:hover .inner {
     transform: translateY(0);
-    opacity: 1;
-}
+        opacity: 1;
+    }
 </style>
