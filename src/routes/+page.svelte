@@ -1,4 +1,5 @@
 <script>
+    import Text from "../lib/Text.svelte";
     import Link from "../lib/Link.svelte";
     import Subtitle from "../lib/Subtitle.svelte";
 
@@ -15,7 +16,7 @@
 </p>
 <br />
 
-<p class="text-justify">
+<Text>
     At BioMedizone, we hold events to support students interested in the
     biomedicine field. Our initiative is to help fund research and education of
     those incapable of doing so. Through partnerships with local medical
@@ -23,7 +24,7 @@
     explore the world of biomedicine. Our goal is not only to support academic
     growth but also to inspire the next generation of innovators who can
     contribute to the future of healthcare and medical research.
-</p>
+</Text>
 
 <Officers />
 <Blogs />
