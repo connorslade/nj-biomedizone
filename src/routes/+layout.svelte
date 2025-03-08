@@ -1,11 +1,14 @@
 <script lang="ts">
+	import '../app.css';
+	import type { LayoutProps } from './$types';
+
 	import Link from '$lib/Link.svelte';
-import '../app.css';
     import NavDropdown from '../lib/NavDropdown.svelte';
     import Title from '../lib/Title.svelte';
 	import { Instagram, MessageSquare } from '@lucide/svelte';
+    import { page } from '$app/state';
 
-	let { children } = $props();
+	let { children, data }: LayoutProps = $props();
 
 	const pages = [
       { title: 'Benefits', href: '/benefits' },
@@ -34,7 +37,7 @@ import '../app.css';
 	</div>
 </nav>
 
-<Title title="NJ BioMedizone" />
+<Title title={page.data.title} />
 
 <div class="max-w-3xl mx-auto mb-4">
     {@render children()}

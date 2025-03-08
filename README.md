@@ -7,3 +7,6 @@
 ## Todo
 
 - rename to 'NJ BioMedizone'
+- mobile friendly
+- sync blog
+- fix footer
