@@ -1,12 +1,13 @@
 <script lang="ts">
 	import '../app.css';
+    import { page } from '$app/state';
+    import { injectAnalytics } from '@vercel/analytics/sveltekit'
 	import type { LayoutProps } from './$types';
 
 	import Link from '$lib/Link.svelte';
     import NavDropdown from '../lib/NavDropdown.svelte';
     import Title from '../lib/Title.svelte';
 	import { Instagram, MessageSquare } from '@lucide/svelte';
-    import { page } from '$app/state';
 
 	let { children, data }: LayoutProps = $props();
 
@@ -15,6 +16,8 @@
       { title: 'Research', href: '/research' },
       { title: 'Partnerships', href: '/partnerships' },
     ];
+
+	injectAnalytics();
 </script>
 
 <nav class="flex flex-wrap justify-center sm:justify-between items-center p-4 shadow-md">
