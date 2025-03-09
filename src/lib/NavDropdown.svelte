@@ -9,7 +9,7 @@
         {#if href}
             <a href={href} class="text-gray-700 hover:text-blue-600 transition-colors duration-300">{name}</a>
         {:else}
-            <span class="text-gray-700">{name}</span>
+            <span class="text-gray-700 cursor-pointer">{name}</span>
         {/if}
     {/snippet}
 

@@ -31,9 +31,9 @@
     		]} />
 
     		<NavDropdown name="Socials" href={null} links={[
-               	{ name: 'Instagram', icon: Instagram, new: true, href: 'https://www.instagram.com/biomedizone_nj' },
-               	{ name: 'Discord', icon: MessageSquare, new: true, href: 'https://discord.gg/kETexd2pEX' }
-                ]} />
+                { name: 'Instagram', icon: Instagram, new: true, href: 'https://www.instagram.com/biomedizone_nj' },
+                { name: 'Discord', icon: MessageSquare, new: true, href: 'https://discord.gg/kETexd2pEX' }
+            ]} />
 
     	    {#each pages as page}
     			<a href={page.href} class="text-gray-700 hover:text-blue-600 transition-colors duration-300">{page.title}</a>
