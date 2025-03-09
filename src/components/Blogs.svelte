@@ -1,7 +1,7 @@
 <script lang="ts">
     import Subtitle from "../lib/Subtitle.svelte";
 
-    import articles from "../assets/articles.json";
+    let { articles } = $props();
 </script>
 
 <Subtitle title="Blog" />
@@ -18,7 +18,7 @@
                         <h3 class="text-xl font-semibold">{article.title}</h3>
                         <p class="text-sm text-gray-500">{article.published}</p>
                     </div>
-                    <p class="text-sm">{article.description}</p>
+                    <p class="text-sm">{article.brief}</p>
                 </a>
             </div>
         {/each}

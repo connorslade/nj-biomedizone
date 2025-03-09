@@ -1,10 +1,14 @@
-<script>
+<script lang="ts">
+    import type { PageData } from "./$types";
+
     import Text from "../lib/Text.svelte";
     import Link from "../lib/Link.svelte";
     import Subtitle from "../lib/Subtitle.svelte";
 
     import Officers from "../components/Officers.svelte";
     import Blogs from "../components/Blogs.svelte";
+
+    let { data }: { data: PageData } = $props();
 </script>
 
 <Subtitle title="About Us" />
@@ -27,4 +31,4 @@
 </Text>
 
 <Officers />
-<Blogs />
+<Blogs articles={data.posts} />
