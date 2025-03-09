@@ -15,5 +15,6 @@
 <style>
     .bg-image {
         background-image: url("/title-background.png");
+        background-position: top;
     }
 </style>
