@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+article.rendered {
+    & p {
+        @apply text-justify mb-4;
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4 {
+        @apply mt-4 mb-2;
+    }
+
+    & h1 {
+        @apply text-3xl font-bold;
+    }
+
+    & h2 {
+        @apply text-2xl font-semibold;
+    }
+
+    & h3 {
+        @apply text-xl font-medium;
+    }
+
+    & h4 {
+        @apply text-lg font-medium;
+    }
+
+    & ul {
+        @apply ml-4 pl-4 mb-4 list-disc;
+    }
+
+    & ol {
+        @apply ml-4 pl-4 mb-4 list-decimal;
+    }
+
+    & a {
+        @apply text-blue-600 hover:underline;
+    }
+
+    & blockquote {
+        @apply border-l-2 border-gray-400 pl-4 ml-0 mb-4;
+    }
+
+    & hr {
+        @apply my-4 border-t-2 border-gray-400;
+    }
+
+    & pre {
+        @apply mb-4;
+    }
+}
