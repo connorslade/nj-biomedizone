@@ -1,7 +1,7 @@
 <script lang="ts">
-  let { children } = $props();
+  let { children, class : klass } = $props();
 </script>
 
-<p class="text-justify">
+<p class="text-justify {klass}">
     {@render children()}
 </p>

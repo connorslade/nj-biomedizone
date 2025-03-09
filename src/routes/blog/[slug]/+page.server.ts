@@ -11,7 +11,6 @@ export const load: PageServerLoad = async (data) => {
       publication(host: "${HASHNODE_DOMAIN}") {
         post(slug: "${slug}") {
           title
-          brief
           url
           publishedAt
           readTimeInMinutes
@@ -38,7 +37,6 @@ export const load: PageServerLoad = async (data) => {
 
   return {
     title: post.title,
-    brief: post.brief,
     url: post.url,
     published: post.publishedAt,
     readTimeInMinutes: post.readTimeInMinutes,

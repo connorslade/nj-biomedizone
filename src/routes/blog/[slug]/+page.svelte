@@ -6,7 +6,7 @@
     let { data }: PageProps = $props();
 </script>
 
-<div class="flex mt-6 gap-2 justify-center">
+<div class="flex mt-6 mb-4 gap-2 justify-center">
     <span class="flex gap-1 items-baseline"
         ><Calendar size={16} class="translate-y-0.5" />
         {new Date(data.published).toLocaleString()}</span

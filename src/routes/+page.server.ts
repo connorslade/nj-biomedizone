@@ -35,7 +35,7 @@ export const load: PageServerLoad = async () => {
 
     return {
       title: post.title,
-      brief: post.brief,
+      brief: process_brief(post.brief),
       slug: post.slug,
       published: new Date(post.publishedAt).toLocaleDateString(),
     };
@@ -43,3 +43,12 @@ export const load: PageServerLoad = async () => {
 
   return { title: "NJ BioMedizone", posts };
 };
+
+function process_brief(str: string): string {
+  str = str.slice(0, -3);
+
+  while (str.length > 0 && [",", ".", "!", "?"].includes(str[str.length - 1]))
+    str = str.slice(0, -1);
+
+  return `${str}...`;
+}
