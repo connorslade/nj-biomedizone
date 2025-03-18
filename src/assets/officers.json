@@ -1,8 +1,8 @@
 [
   { "name": "Eyad Abdelfattah", "role": "President", "image": "Eyad-Abdelfattah.jpg" },
-  { "name": "Ritvik Peddi", "role": "Vice President", "image": "Ritvik-Peddi.jpg" },
+  { "name": "Charan Pyloore", "role": "Vice President", "image": "Charan-Pyloore.jpg" },
   { "name": "Prabhav Kautickwar", "role": "Social Media Manager", "image": "Prabhav-Kautickwar.jpg" },
   { "name": "Rayan Rana", "role": "Content Writer", "image": "Rayan-Rana.jpg" },
-  { "name": "Charan Pyloore", "role": "Secretary", "image": "Charan-Pyloore.jpg" },
+  { "name": "Ravi Kamdar", "role": "Secretary", "image": "Charan-Pyloore.jpg" },
   { "name": "Naitik Narang", "role": "Treasurer", "image": "Naitik-Narang.jpg" }
 ]
